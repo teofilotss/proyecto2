@@ -16,7 +16,7 @@ body{ /* Así se crea una regla de estilo para el objeto body */
     background-color: var(--color-blanco);/* Color de fondo */
     color: var(--color-gris-oscuro); /* Color de texto */
     font-family: 'Jost', sans-serif;
-    font-size: 18px;
+    font-size: 12px;
     margin: 0;/*Elimina margen por defecto de body*/
    
 }
@@ -32,12 +32,12 @@ h1, h2, h3, h4, h5, h6{
     margin: 0;
 }
 h1{
-    font-size: 48px; /* Tamaño de la letra en pixeles */
+    font-size: 36px; /* Tamaño de la letra en pixeles */
     font-weight: 900; /* Estilo o grosor de la letra */
 }
 h2{
     font-weight: 200; 
-    font-size: 40px;
+    font-size: 30px;
     text-transform: lowercase; /* Mostrar los textos en minúscula */
     letter-spacing: -2px;
 }
@@ -45,6 +45,12 @@ h3{
     font-size: 18px;
     text-transform: uppercase; /* Mostrar los textos en mayúcula */
     font-weight: 700;
+}
+#top-nav{
+    background-color: var(--color-gris-oscuro) ;
+    
+   
+
 }
 
 #main-header{
@@ -84,8 +90,8 @@ h3{
 }
 
 .padded{
-    padding-top: 90px; /* padding es la distancia del borde al contenido */
-    padding-bottom: 90px;
+    padding-top: 10px; /* padding es la distancia del borde al contenido */
+    padding-bottom: 10px;
 }
 .container{
     max-width: 1200px;
@@ -116,5 +122,27 @@ h3{
 .img-fluid{
     max-width: 100%; /*se ajusta al ancho maximo a su contenedor*/
     height: auto;/* estapropiedad es para que el alto ajuste proporcional al ancho*/
+}
 
+.menu{
+    list-style: none; /*quita viñetas de la lista*/
+    display: flex;  /* para xcolumnas*/
+    padding: 0; /* es la distancia entre los objetos*/
+    margin: 0;
+
+}
+
+.menu li a{  /*a todos los hipervinculos de la lista de menu se aplica padding (es separar las lista. Padding es la separacion de los objetos)*/
+display: block;
+
+}
+
+.menu-top li a{
+    padding: 5px 8px; /*padding arriba y abajo 5pixeles y por el costado 8 pixeles*/
+    color: var(--color-gris-claro);
+}
+
+.menu-top li a:hover{  /*cuando se coloca el mouse sobre el texto de menu */
+    color: var(--color-blanco); /*el color cambia a blanco*/
+    text-decoration: none;
 }
